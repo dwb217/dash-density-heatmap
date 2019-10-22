@@ -21,7 +21,7 @@ fig = go.Figure(go.Densitymapbox(lat=df['latitude'], lon=df['longitude'], z=df['
 fig.update_layout(mapbox_style="stamen-terrain",
                   mapbox_center_lon=44.4213,
                   mapbox_center_lat=33.3248,
-                  mapbox_zoom=7,
+                  mapbox_zoom=5,
                  )
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
