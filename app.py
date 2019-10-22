@@ -10,7 +10,7 @@ import pickle
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title='dc_houses'
+app.title='iraq protests'
 
 ########## Define the data
 df = pd.read_csv('resources/iraq_protests.csv')
