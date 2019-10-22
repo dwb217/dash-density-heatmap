@@ -17,7 +17,7 @@ df = pd.read_csv('resources/iraq_protests.csv')
 
 ########## Define the figure
 
-fig = go.Figure(go.Densitymapbox(lat=df['latitude'], lon=df['latitude'], z=df['fatalities'], radius=10))
+fig = go.Figure(go.Densitymapbox(lat=df['latitude'], lon=df['longitude'], z=df['fatalities'], radius=10))
 fig.update_layout(mapbox_style="stamen-terrain",
                   mapbox_center_lon=44.4213,
                   mapbox_center_lat=33.3248,
