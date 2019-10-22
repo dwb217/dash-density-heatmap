@@ -13,7 +13,7 @@ server = app.server
 app.title='dc_houses'
 
 ########## Define the data
-df = pd.read_csv('resources/iraq_protests.csv', index_col='Unnamed: 0')
+df = pd.read_csv('resources/iraq_protests.csv')
 
 ########## Define the figure
 
@@ -31,7 +31,7 @@ app.layout = html.Div(children=[
     html.H1('Iraq Protests'),
     html.Div([
         dcc.Graph(id='figure-1', figure=fig),
-        html.A('Code on Github', href='https://github.com/austinlasseter/dash-density-heatmap'),
+        html.A('Code on Github', href='https://github.com/dwb217/dash-density-heatmap'),
         html.Br(),
         html.A('Source:', href='https://plot.ly/python/mapbox-density-heatmaps')
     ])
